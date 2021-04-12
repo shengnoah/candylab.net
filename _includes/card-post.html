@@ -1,0 +1,18 @@
+<div class="row">                                                                                              
+    {% for post in site.categories.design limit: 20 %} 
+            <div class="card card-pin  raco" {% unless post.image %} style="min-height:0px;" {% endunless %}>
+                {% unless post.image %}
+                 
+                {% endunless %}
+                
+                {% if post.image %} 
+                    <div class="wrapcat">
+                    {% if post.image.thumb %}
+                        <a href="{{site.baseurl}}{{post.url}}"  title="{{ post.title | escape_once }}" class="text-dark"><img src="{{ site.urlimg }}{{ post.image.thumb }}" class="alignleft" width="100" height="100" alt="{{ page.title }}"></a>
+                    {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+    {% endfor %}
+</div>
+

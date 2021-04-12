@@ -1,0 +1,63 @@
+---
+layout: default
+format: post 
+---
+
+{% if page.image.title %}
+<div class="row t30">
+	<div class="small-12 columns">
+		<img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}">
+
+		{% if page.image.caption_url and page.image.caption %}
+		<p class="text-right caption">
+			<a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
+		</p>
+		{% endif %}
+	</div><!-- /.small-12.columns -->
+</div><!-- /.row -->
+{% endif %}
+
+
+
+    <div class="row t30">
+        <div class="medium-2 columns">
+			<div class="col" markdown="1">
+				<script type="text/javascript">var jd_union_pid="3002832670";var jd_union_euid="";</script><script type="text/javascript" src="//ads-union.jd.com/static/js/union.js"></script>
+			</div>
+			<div class="col" markdown="1">
+			</div>
+			<div class="col" markdown="1">
+			</div>
+        </div>
+
+        <div class="medium-8 columns">
+			<article>
+				<header>
+					{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+					<h1>{{ page.title }}</h1>
+				</header>
+	
+	
+				{% if page.teaser %}
+				<p class="teaser">
+					{{ page.teaser }}
+				</p>
+				{% endif %}
+	
+	
+				{{ content }}
+	
+							{% if page.comments == true %}
+							{% include _comments.html %}
+					{% endif %}
+			
+			</article>
+	
+		</div>
+        <div class="medium-2 columns">
+			<div class="panel radius" markdown="1">
+			</div>
+        </div>
+
+    
+	</div>

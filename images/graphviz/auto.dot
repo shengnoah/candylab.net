@@ -1,0 +1,42 @@
+graph G {
+  graph [pad="0.75",ranksep="0.5",nodesep="0.3"];
+  node [shape=box,width=1.8];
+  edge [style=invis];
+  rankdir=LR;
+  compound = true;
+
+  subgraph cluster2 {
+    color="#d46b08";
+    style="filled"
+    fontcolor="#d46b08";
+    // fillcolor="#ffc069";
+    fillcolor="#ffe7ba";
+    label = "Driver第三方模块驱动层"
+    node [color="#d46b08",fontcolor="#d46b08",fillcolor="#ffa940"]
+    "代码审计1" -- "自动扫描2" -- "代码审计3" -- "自动扫描4";
+  }
+
+  subgraph cluster1 {
+    color="#d46b08";
+    style="filled"
+    fontcolor="#d46b08";
+    // fillcolor="#ffc069";
+    fillcolor="#ffe7ba";
+    label = "Core核心公通业务"
+    node [color="#d46b08",fontcolor="#d46b08",fillcolor="#ffa940"]
+    "扫描器调度" -- "代码审计调度" -- "REST API" -- "日志处理";
+  }
+
+  subgraph cluster0 {
+    color="#73d13d"
+    style="filled"    
+    label = "接口层业务"    
+    node [style=filled,fontcolor="#237804",color="#237804",fillcolor="#73d13d"];
+    "fortify" -- "cx" -- "混合应用场景" -- "XX 前端应用";
+    "标准 Node 应用" -- "轻型函数应用" -- "同构应用" -- "....."
+  }
+  
+  "CORE" -- "标准 Node 应用" [constraint=false]; 
+  "DSL" -- "标准 Node 应用" [constraint=false]; 
+
+}

@@ -1,0 +1,217 @@
+---
+layout: default
+format: frontpage
+---
+
+<div id="header-home">
+    <div class="row">
+        <div class="small-12 columns">
+        </div><!-- /.medium-4.columns -->
+    </div><!-- /.row -->
+</div><!-- /#header-home -->
+
+
+<!--
+
+<div class="row t30">
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags_list = site_tags | split:',' | sort %}
+
+<ul class="entry-meta inline-list">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+  	<li><a href="#{{ this_word }}" class="tag" ><span class="term">{{ this_word }}</span> <span style="position:relative;color:royalblue"class="count">{{ site.tags[this_word].size }}</span></a></li>
+  {% endunless %}{% endfor %}
+</ul>
+
+-->
+
+<!--
+
+{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+  {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+  <span class="anchor-bookmark" id="{{ this_word }}"></span>
+	<article>
+	<h2 class="tag-heading">{{ this_word }}</h2>
+		<ul>
+    {% for post in site.tags[this_word] %}{% if post.title != null %}
+      <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endif %}{% endfor %}
+		</ul>
+	</article>
+{% endunless %}{% endfor %}
+
+-->
+
+</div>
+
+
+<script type="text/javascript">
+    window.onload = function(){
+      new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{site.baseurl}}/search.json',
+        searchResultTemplate: '<li class="entry-title"><a href="{url}" title="{title}">{title}</a></li>'
+      });
+    };
+  </script>
+
+
+
+<div class="row t30">
+    <div class="medium-8 columns medium-offset-2 end">
+        <div itemprop="name">
+            <h1>搜索</h1>
+        </div>
+
+
+        <section id="disqus_thread" class="read-more">
+            <div class="read-more-header">
+              <a href="{{ site.url }}{{ page.previous.url }}" class="read-more-btn"></a>
+            </div><!-- /.read-more-header -->
+              <div style="text-align: center">
+                <input type="text"  placeholder="输入文章的标题、标签、分类等关键字。" id="search-input"/>
+              </div>
+        
+              <ul id="results-container">
+              </ul>
+        </section>
+
+    </div>
+</div>
+
+
+
+<div class="row t30">
+    <div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
+        <article itemscope itemtype="http://schema.org/Article">
+            <header>
+                {% if page.image.title %}
+                <figure>
+                    <img src="{{ site.urlimg }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
+
+                    {% if page.image.caption_url and page.image.caption %}
+                    <figcaption class="text-right">
+                        <a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
+                    </figcaption>
+                    {% elsif page.image.caption %}
+                    <figcaption class="text-right">
+                        {{ page.image.caption }}
+                    </figcaption>
+                    {% endif %}
+                </figure>
+                {% endif %}
+
+                <div itemprop="name">
+                    {% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+                    <h1>{{ page.title }}</h1>
+                </div>
+            </header>
+
+
+            {% if page.teaser %}
+            <p class="teaser" itemprop="description">
+                {{ page.teaser }}
+            </p>
+            {% endif %}
+
+            <div itemprop="articleSection">
+            {{ content }}
+            </div>
+            
+        </article>
+            
+    </div>
+
+</div>
+
+
+
+<div id="slider" class="row t30">
+    <a href="/design/opencanary/"><img src="/images/slider/mario.jpg" title ="蜜罐系统" alt="基于开源蜜罐的实践与功能扩展"></a>
+    <a href="/design/pong-table/"><img data-src="/images/slider/mariohead.jpg" title="大数据威胁分析"  alt="基于大数据企业网络威胁发现模型实践 "></a>
+    ...
+</div>
+
+
+<script>
+var slider = new IdealImageSlider.Slider({
+  selector: '#slider',
+  height: 300,
+  });
+slider.addBulletNav();
+slider.addCaptions();
+slider.start();
+</script>
+
+
+
+{% unless site.posts == empty %}
+<!--
+    <div class="row">
+        <div class="medium-6 columns">
+            {% for post in site.posts limit:1 %}
+            {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <p>
+                {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+                <a href="{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
+            </p>
+            {% endfor %}
+        </div>
+
+
+        <div class="medium-6 columns">
+            <p><strong>{{ site.data.language.more_articles }}</strong></p>
+            {% include list-posts entries='3' offset='1' %}
+        </div>
+    </div>
+-->
+{% endunless%}
+
+{% unless site.posts == empty %}
+    <div class="row">
+        <div class="medium-6 columns">
+            {% for post in site.posts limit:1 %}
+            {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <p>
+                {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+                <a href="{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
+            </p>
+            {% endfor %}
+        </div>
+
+
+        <div class="medium-6 columns">
+            <p><strong>{{ site.data.language.more_articles }}</strong></p>
+            {% include list-posts entries='3' offset='1' %}
+        </div>
+    </div>
+{% endunless%}
+
+
+
+
+
+<div class="row t60">
+    {% if page.widget4.title %}
+        {% include _frontpage-widget.html widget=page.widget4 %}
+    {% endif %}
+
+
+    {% if page.widget5.title %}
+        {% include _frontpage-widget.html widget=page.widget5 %}
+    {% endif %}
+
+
+    {% if page.widget6.title %}
+        {% include _frontpage-widget.html widget=page.widget6 %}
+    {% endif %}
+</div>
+
+
+
+

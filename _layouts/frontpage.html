@@ -60,27 +60,7 @@ format: frontpage
 
 
 
-<div class="row t30">
-    <div class="medium-8 columns medium-offset-2 end">
-        <div itemprop="name">
-            <h1>搜索</h1>
-        </div>
 
-
-        <section id="disqus_thread" class="read-more">
-            <div class="read-more-header">
-              <a href="{{ site.url }}{{ page.previous.url }}" class="read-more-btn"></a>
-            </div><!-- /.read-more-header -->
-              <div style="text-align: center">
-                <input type="text"  placeholder="输入文章的标题、标签、分类等关键字。" id="search-input"/>
-              </div>
-        
-              <ul id="results-container">
-              </ul>
-        </section>
-
-    </div>
-</div>
 
 
 
@@ -146,6 +126,33 @@ slider.addCaptions();
 slider.start();
 </script>
 
+
+
+<div class="row t30">
+    <div class="medium-8 columns medium-offset-2 end">
+        <div itemprop="name">
+            <h3>搜索</h3>
+        </div>
+
+
+        <section id="disqus_thread" class="read-more">
+            <div class="read-more-header">
+              <a href="{{ site.url }}{{ page.previous.url }}" class="read-more-btn"></a>
+            </div><!-- /.read-more-header -->
+              <div style="text-align: center">
+                <input type="text"  placeholder="输入文章的标题、标签、分类等关键字。" id="search-input"/>
+              </div>
+        
+              <ul id="results-container">
+              </ul>
+        </section>
+
+        <div itemprop="name">
+            <h1> &nbsp; </h1>
+        </div>
+
+    </div>
+</div>
 
 
 {% unless site.posts == empty %}

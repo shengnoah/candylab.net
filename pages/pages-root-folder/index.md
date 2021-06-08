@@ -34,8 +34,8 @@ widget3:
 widget4:
   title: "道高一尺"
   url: '/hobby/elec-guitar//hobby/elec-guitar/'
-  text: '<a href="/hobby/elec-guitar/">为什么要介绍Orange网关，他有那些特色的地方，值得我们去借鉴和学习？</a><br/>'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="/images/widget-freebuf-302x182.jpg" width="302" height="182" alt=""/></a>'
+  text: '<a href="/design/orange-gateway/">为什么要介绍Orange网关，他有那些特色的地方，值得我们去借鉴和学习？</a><br/>'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="/images/thumb/orange_thumb.png" width="302" height="182" alt=""/></a>'
    
 widget5:
   title: "太公钓鱼"

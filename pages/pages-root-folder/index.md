@@ -32,22 +32,22 @@ widget3:
 
 
 widget4:
-  title: "吉他"
+  title: "道高一尺"
   url: '/hobby/elec-guitar//hobby/elec-guitar/'
-  text: '<a href="/hobby/elec-guitar/">吉他是一种常见的乐器，便携方便，学习成本底，如果你喜欢音乐但又不以此为生，学学吉他也是不错的选择。</a><br/>'
+  text: '<a href="/hobby/elec-guitar/">为什么要介绍Orange网关，他有那些特色的地方，值得我们去借鉴和学习？</a><br/>'
   video: '<a href="#" data-reveal-id="videoModal"><img src="/images/widget-freebuf-302x182.jpg" width="302" height="182" alt=""/></a>'
    
 widget5:
-  title: "蜜罐"
+  title: "太公钓鱼"
   url: '/design/opencanary/'
-  text: '<a href="/design/opencanary/">蜜罐系统本质是一种伪装系统,通过模拟真实服务的技术被动取得攻击信息。蜜罐分为主动蜜罐与被动蜜罐，应用的场景也不一样。</a><br/>'
+  text: '<a href="/design/opencanary/">蜜罐是一种伪装技术，也是防御手段。太公钓鱼，愿者上勾。</a><br/>'
   image: widget-point-line-302x182.jpg  
 
 
 widget6:
-  title: "扫描"
+  title: "众擎易举"
   url: '/design/auto-scan-code-review/'
-  text: '<a href="/design/auto-scan-code-review/">开源世界有很多种的扫描器，而我们需要一种标准规范使用这些扫描器，通过统一调度形式，便利的驱动这些扫描工具。</a><br/>'
+  text: '<a href="/design/auto-scan-code-review/">海量的数据日志，传统的简单说法不适用，神经网络方法来分析。</a><br/>'
   image: widget-mailproxy-302x182.jpg
   
 widget7:

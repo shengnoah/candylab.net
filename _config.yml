@@ -8,13 +8,13 @@
 #                                                 /____/
 #
 # Title of your website
-title: '糖果的实验室：基于开源软件构建企业安全防御系统'
+title: '糖果的实验室：墨守之道-Web服务安全架构与实践'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: '基于开源软件构建企业安全防御系统'
+slogan: '墨守之道-Web服务安全架构与实践'
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: '糖果的实验室：<br>基于开源软件构建企业安全防御系统<br>'
+description: '墨守之道-Web服务安全架构与实践<br>'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
 #credits: '<p>糖果实验室 出品 <a href="https://lua.ren" style="font-weight: bold">Lua教程</a></p> <p>感谢艺术家Phlow的灵感主题！</p>'

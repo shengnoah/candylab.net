@@ -41,14 +41,15 @@ widget5:
   title: "太公钓鱼"
   url: '/design/opencanary/'
   text: '<a href="/design/opencanary/">蜜罐是一种伪装技术，也是防御手段。太公钓鱼，愿者上勾。</a><br/>'
-  image: widget-point-line-302x182.jpg  
+  image: /thumb/fish_thumb.png  
 
 
 widget6:
   title: "众擎易举"
   url: '/design/auto-scan-code-review/'
   text: '<a href="/design/auto-scan-code-review/">海量的数据日志，传统的简单说法不适用，神经网络方法来分析。</a><br/>'
-  image: widget-mailproxy-302x182.jpg
+  image: /thumb/fish_thumb.png  
+
   
 widget7:
   title: "ClickHouse与威胁日志分析"

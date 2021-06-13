@@ -7,7 +7,7 @@
 
 layout: frontpage
 
-tags: 糖果实验室,开源,安全系统,机械键盘，吉他谱，电脑外设，静电容键盘,niz，光阴里的故事，orchina.org
+tags: 糖果的实验室,墨守之道,WEB服务安全架构与实践,宁芝,niz
 
 header:
   image_fullwidth: header_unsplash_12_1.jpg

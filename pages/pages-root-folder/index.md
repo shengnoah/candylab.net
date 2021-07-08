@@ -99,10 +99,31 @@ top1:
   image: widget-mailproxy-302x182.jpg
 
 name1:
-  title: "OpenResty创始人"
+  title: "--新浪微博 COO，新浪移动 CEO 王巍"
   url: '/design/superset/'
   image: 'frontpage/superset.png'
-  text: 'OpenResty and Xray'
+  text: '近年来，国家对网络信息安全高度重视，信息化社会的建设离不开网络安全技术的保障，企业的生产运营也需要依靠网络信息安全技术。这一切推动了计算机安全技术的快速发展和信息安全建设的创新实践。例如，大数据信息平台建设、基于人工智能的网络攻击分析、自动化与智能化的信息安全等，让网络信息安全建设迈上了新的台阶。本书从网络攻击与防御两种角度概括了网络信息安全建设中的技术实践与思考，让读者从多个视角了解网络信息安全建设中的攻守之道。'
+
+
+name2:
+  title: "--OpenResty 创始人兼 CEO 章亦春"
+  url: '/design/superset/'
+  image: 'frontpage/superset.png'
+  text: '多年来，我们致力于用技术和创新助力 OpenResty 社区发展，并为遍布世界各地的 OpenResty 用户提供服务。随着 OpenResty 社区的壮大，OpenResty 推出了更多的革命性产品——OpenResty Edge、OpenResty XRay、YLang 语言和 YSQL 语言。本书介绍了这些 OpenResty 产品在安全领域的应用，为大家开启了一扇通往 OpenResty 技术世界的大门。希望这本书能让读者感受到 OpenResty 新技术为安全领域注入的一股强大力量。'
+
+name3:
+  title: "--新浪信息安全总监 康宇"
+  url: '/design/superset/'
+  image: 'frontpage/superset.png'
+  text: '当前，网络攻击对抗已经日趋常态化，攻防双方压力同在。作为网络安全行业的从业者，我们要不断地更新自己的知识库，深入了解资产防护的手段和渗透攻击的方式，不仅要掌握经典的安全攻防原理，而且要了解新兴的技术理念。在网络攻防中，往往是奇兵制胜，以“魔法”战胜“魔法”，本书既有对常见攻击场景的原理回顾，又有对新防御手段的解析，能够帮助读者在网络攻防中做到胸有成竹、出奇制胜。'
+
+
+
+name4:
+  title: "--Orange 网关创始人 吴兆玉"
+  url: '/design/superset/'
+  image: 'frontpage/superset.png'
+  text: 'Orange 是一个基于 OpenResty 的 API 网关，除 Nginx 的常规功能外，它还可用于 API 监控、访问控制（鉴权、WAF）、流量筛选、访问限速、A/B 测试、静态 / 动态分流等场景。Orange 凭借其灵活的插件机制提供了强大的功能扩展性，用户可基于其提供的分层和钩子机制定制丰富的流量处理算子，同时，基于Lor框架的sinatra风格API 也为可交互性提供了极大便利。这本书详细介绍了Orange网关技术在网络安全场景的应用，值得网络安全技术人员学习研读。'
 #
 # Use the call for action to show a button on the frontpage
 #

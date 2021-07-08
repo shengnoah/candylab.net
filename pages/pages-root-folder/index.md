@@ -98,6 +98,11 @@ top1:
   text: '<a href="/design/WAF原理/">基于OpenResty服务与Lua扩展模块创建WEB防护业务的工作原理。</a><br/>'
   image: widget-mailproxy-302x182.jpg
 
+name1:
+  title: "OpenResty创始人"
+  url: '/design/superset/'
+  image: 'frontpage/superset.png'
+  text: 'OpenResty and Xray'
 #
 # Use the call for action to show a button on the frontpage
 #
